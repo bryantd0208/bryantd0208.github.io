@@ -31,7 +31,7 @@ body {
 }
 
 .container nav ul{
-    width: 65%;
+    width:75%;
     height: 100%;
     margin: 0 auto;
     list-style: none;
@@ -39,7 +39,7 @@ body {
 }
 
 .container nav ul li{
-    width: 20%;
+    width: 17%;
     float: left;
     text-align: center;
     color: #eee;
@@ -51,7 +51,6 @@ body {
     transition: all 0.5s ease;
     position: relative;
     text-decoration: none;
-
 }
 
 .container nav ul li:hover{
@@ -108,7 +107,7 @@ header figure figcaption {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 main{
-    color: rgba(221, 221, 221, 0.799);
+    color: rgba(221, 221, 221,0.88);
     padding-bottom: 5%;
 }
 main h2{
@@ -117,6 +116,7 @@ main h2{
 }
 main p{
     text-align: center;
+    font-size: large;
 }
 
 main .row{
@@ -162,7 +162,7 @@ main .row{
 .sql {width: 25%; background-color: #e3f11ba6;}
 
 .classes ul{
-    color: rgba(221, 221, 221, 0.799);
+    color: rgba(221, 221, 221, 0.88);
     text-align: center;
     list-style-position: inside;
     font-size: large;
