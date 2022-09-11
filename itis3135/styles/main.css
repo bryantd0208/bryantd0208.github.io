@@ -4,6 +4,10 @@ html {
     margin: 0;
     padding: 0;
 }
+html a{
+    color: #eee;
+    text-decoration: none;
+}
 body {
     background-color: #212121;
 }
@@ -45,10 +49,11 @@ body {
     cursor: pointer;
     transition: all 0.5s ease;
     position: relative;
+    text-decoration: none;
 
 }
 
-.container nav ul li:hover {
+.container nav ul li:hover{
     color: #ea3b50;
     box-shadow: inset 0 5px #ea3b50;
 }
@@ -63,7 +68,7 @@ body {
     visibility: hidden;
     opacity: 0;
 }
-.container nav ul li ul.sub-nav li, nav ul li ul.sub-nav li a{
+.container nav ul li ul.sub-nav li{
     color: #eee;
     font-size: 14px;
     width: 80%;
@@ -79,7 +84,9 @@ body {
     visibility: visible;
     opacity: 1;
 }
-
+header{
+    /* padding-bottom: 600px; */
+}
 .row {
     padding-top:150px;
     margin-bottom: 10px;
@@ -109,4 +116,24 @@ body {
     height: 500px;
     width: 500px;
 }
+main{
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 5%;
+    padding-left: 15%;
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.60);
+}
 
+footer h3{
+    color: white;
+    font-family: serif;
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
