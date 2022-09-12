@@ -127,21 +127,25 @@ table {
     margin-left: auto;
     margin-right: auto;
 }
-table h3{
+main .tableCaption, figcaption{
     padding-bottom: 15px;
     padding-top: 30px;
     font-weight: bolder;
-    font-size: larger;
+    font-size:x-large;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+
 }
-table caption{
-    padding-bottom: 15px;
-    padding-top: 30px;
-    font-weight: bolder;
+figure figcaption{
+    font-weight: lighter;
     font-size: larger;
+    color:#eee;
 }
 table .head{
     background-color: rgba(89, 89, 90, 0.81);
     font-weight: bold;
+    text-align: center;
 }
 table tr{
     background-color: rgba(150, 161, 165, 0.81)
@@ -162,4 +166,5 @@ footer h3{
     padding-bottom: 30px;
     width: 100%;
     text-align: center;
+    text-decoration: none;
 }

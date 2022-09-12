@@ -37,31 +37,90 @@
     </div>
     
     <header>
-        <div class="row">
-            <div class="column left">
-                <h1> Course Assignments</h1>
-            </div>
-            <div class="column right">
-                <section class="placeholder">
-                
-                </section>
-            </div>    
-        </div>
+        <h1>HTML Forms</h1>
     </header>
     
     <main>
-        <h2>Assignments</h2>
-        <h3>September 9th, 2022</h3>
-        <ul>
-            <li><a href="/itis3135/tables.html">Activity #2 - HTML Tables</a></li>
-            <li><a href="/itis3135/forms.html">Activity #3 - HTML Form</a></li>
-            <li><a href="/itis3135/brand.html">Firm Page</a></li>
-            <li><a href="/itis3135/contract.html">Contract</a></li>
-        </ul>
+        <article id="mainForm">
+            <h2>Contact Form</h2>
+            <p>We'd really like to hear how we can serve you!</p>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Information</legend>
+                <p>
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Ex: Bryant" autocomplete="on" required>
+                </p>
+                <p>
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Ex: Foster" autocomplete="on" required>
+                </p>
+                <label for="companyName">Company Name:</label>
+                <input type="text" name="companyName" id="companyName" placeholder="Ex: De Luna's Designs">
+                </p>
+                <p>
+                <label for="emailAddress">Email:</label>
+                <input type="email" name="emailAddress" id="emailAddress" placeholder="Ex: jfoster@gmail.com" autocomplete="on" required>
+                </p>
+                <p>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="phone" id="phone" placeholder="Ex: 1111111111" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                </p>
+                <p>
+                    <label for="service">Service Required:</label>
+                    <select name="service" id="service" multiple size="5">
+                        <optgroup label="Website">
+                            <option value="regular package">Regular Package</option>
+                            <option value="advanced package">Advanced Package</option>
+                        </optgroup>
+                            <optgroup label="App">
+                            <option value="game app">Game Application</option>
+                            <option value="buisness app">Buisness Application</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <legend>Have you worked with us before?</legend>
+                <p>
+                    <input type="radio" name="previousClient" id="yes" value="yes">
+                    <label for="Yes">Yes</label>
+                </p>
+                <p>
+                    <input type="radio" name="previousClient" id="no" value="no">
+                    <label for="no">No</label>
+                </p>
+            <br>
+                <legend>What is your preffered method of contact?</legend>
+                <p>
+                    <input type="checkbox" name="contact" id="viaEmail" value="email">
+                    <label for="email">Email</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="contact" id="viaPhone" value="phone">
+                    <label for="phone">Phone Call</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="contact" id="viaMeeting" value="meeting">
+                    <label for="meeting">In-Person Meeting</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="contact" id="otherFormat" value="otherMeeting">
+                    <label for="otherMeeting">Other Form of Meeting</label>
+                </p>
+                <legend>Additional Comments:</legend>
+                <label for="message">Your message</label>
+                <br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+            
+            <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+            </form>
+        </article>
     </main>
 
     <footer>
-        <h3>Designed by De Luna's Designs &copy; 2022</h3>
+        <h3><a href="/itis3135/delunadesigns.co/index.html">Designed by De Luna's Designs &copy; 2022</a></h3>
     </footer>
 </body>
 </html>

@@ -84,48 +84,42 @@ body {
     opacity: 1;
 }
 header{
-    /* padding-bottom: 600px; */
-}
-.row {
     padding-top:150px;
     margin-bottom: 10px;
     text-align: center;
 }
-.row h1 {
+header h1 {
         padding-left: 20px;
         font-family: serif;
         font-size: 4rem;
-        background: linear-gradient(to right, #eeeeee, #efff41ac, #f9a825a4, #ff5622da, #eeeeee);
+        background: linear-gradient(to right, #eeeeee, #f9a425a4, #d54400da, #ff4141ac,#eeeeee);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 }
-.column {
-    float: left;
-  }
-  
-.left {
-    width: 65%;
-  }
-  
-.right {
-    width: 35%;
-  }
-.placeholder{
-    background-color:rgba(255, 255, 255, 0.65);
-    height: 500px;
-    width: 500px;
-}
+
 main{
-    color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
     padding-top: 30px;
     padding-bottom: 5%;
-    padding-left: 15%;
+    color:#eee;
+    justify-content: center;
+    display:flex
 }
-main a{
-    /* color: #ea3b50; */
+main article {
+    margin-left: auto;
+    margin-right: auto;
 }
+main article form fieldset{
+    background-color: #d000007f;
+    width:100%;
+    padding-left: 100px;
+    padding-right: 100px
+}
+
+article button{
+    background-color: #0052ec9f;
+    color: #eeeeee;
+}
+
 footer {
     background-color: rgba(0, 0, 0, 0.60);
 }
@@ -138,4 +132,6 @@ footer h3{
     padding-bottom: 30px;
     width: 100%;
     text-align: center;
+    text-decoration: none;
 }
+
