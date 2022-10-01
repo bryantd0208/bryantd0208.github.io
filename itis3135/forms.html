@@ -5,39 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Forms</title>
-    <link rel="stylesheet" href="styles/forms.css">
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://kit.fontawesome.com/1c8eefd787.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <ul>
-                <li><a href="/itis3135/index.html">Homepage</a></li>
-                <li>Important Links
-                   <ul class="sub-nav">
-                       <li><a href="https://bryantd0208.github.io/">Github Root Page</a></li>
-                       <li><a href="https://bryantd0208.github.io/itis3135">Github WebPage</a></li>
-                       <li><a href="https://webpages.charlotte.edu/bdelunap/itis3135/">UNCC Webpage</a></li>
-                       <li><a href="https://github.com/bryantd0208" target="_blank">Github</a></li>
-                       <li><a href="https://www.linkedin.com/in/bryant-de-luna-peralta-51a0671b8/" target="_blank">LinkedIn</a></li>
-                   </ul> 
-                </li>
-                <li><a href="/itis3135/introduction.html">About Me</a></li>
-                <li><a href="/itis3135/assignments.html">Course Assignments</a></li>
-                <li>Other Links
-                    <ul class="sub-nav">
-                        <li><a href="https://www.freecodecamp.org/bryant_deluna" target="_blank">FreeCodeCamp</a></li>
-                        <li><a href="https://www.codecademy.com/profiles/bryant_deluna" target="_blank">Codecademy</a></li>
-                        <li><a href="https://uncc.instructure.com/courses/178981/users/164769" target="_blank">Personal Canvas Profile</a></li>
-                        <li><a href="https://uncc.instructure.com/courses/178981" target="_blank">Course Page</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">??Special Link??</a></li>
-                    </ul> 
-                </li>
-            </ul>
-        </nav>
-    </div>
     
     <header>
-        <h1>HTML Forms</h1>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    </li>
+                    <li><a href="introduction.html">About Me</a></li>
+                    <li><a href="assignments.html">Course Assignments</a></li>
+                     <li>Webpages
+                       <ul class="sub-nav">
+                           <li><a href="https://bryantd0208.github.io/">Github Root Page</a></li>
+                           <li><a href="https://bryantd0208.github.io/itis3135">Github WebPage</a></li>
+                           <li><a href="https://webpages.charlotte.edu/bdelunap/itis3135/">UNCC Webpage</a></li>
+                       </ul> 
+                </ul>
+            </nav>
+        </div>    
+        <h1>Bryant De Luna-Peralta | Breathtaking Dalmadoodle | ITIS 3135</h1>
     </header>
     
     <main>
@@ -45,7 +35,7 @@
             <h2>Contact Form</h2>
             <p>We'd really like to hear how we can serve you!</p>
             <form action="https://httpbin.org/get" method="get">
-                <fieldset>
+                <fieldset class="mainField">
                     <legend>Information</legend>
                 <p>
                 <label for="firstName">First Name:</label>

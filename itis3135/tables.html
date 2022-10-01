@@ -5,173 +5,177 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Tables</title>
-    <link rel="stylesheet" href="styles/tables.css">
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://kit.fontawesome.com/1c8eefd787.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <ul>
-                <li><a href="/itis3135/index.html">Homepage</a></li>
-                <li>Important Links
-                   <ul class="sub-nav">
-                       <li><a href="https://bryantd0208.github.io/">Github Root Page</a></li>
-                       <li><a href="https://bryantd0208.github.io/itis3135">Github WebPage</a></li>
-                       <li><a href="https://webpages.charlotte.edu/bdelunap/itis3135/">UNCC Webpage</a></li>
-                       <li><a href="https://github.com/bryantd0208" target="_blank">Github</a></li>
-                       <li><a href="https://www.linkedin.com/in/bryant-de-luna-peralta-51a0671b8/" target="_blank">LinkedIn</a></li>
-                   </ul> 
-                </li>
-                <li><a href="/itis3135/introduction.html">About Me</a></li>
-                <li><a href="/itis3135/assignments.html">Course Assignments</a></li>
-                <li>Other Links
-                    <ul class="sub-nav">
-                        <li><a href="https://www.freecodecamp.org/bryant_deluna" target="_blank">FreeCodeCamp</a></li>
-                        <li><a href="https://www.codecademy.com/profiles/bryant_deluna" target="_blank">Codecademy</a></li>
-                        <li><a href="https://uncc.instructure.com/courses/178981/users/164769" target="_blank">Personal Canvas Profile</a></li>
-                        <li><a href="https://uncc.instructure.com/courses/178981" target="_blank">Course Page</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">??Special Link??</a></li>
-                    </ul> 
-                </li>
-            </ul>
-        </nav>
-    </div>
-    
     <header>
-        <h1> HTML Tables</h1>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    </li>
+                    <li><a href="introduction.html">About Me</a></li>
+                    <li><a href="assignments.html">Course Assignments</a></li>
+                     <li>Webpages
+                       <ul class="sub-nav">
+                           <li><a href="https://bryantd0208.github.io/">Github Root Page</a></li>
+                           <li><a href="https://bryantd0208.github.io/itis3135">Github WebPage</a></li>
+                           <li><a href="https://webpages.charlotte.edu/bdelunap/itis3135/">UNCC Webpage</a></li>
+                       </ul> 
+                </ul>
+            </nav>
+        </div>    
+        <h1>Bryant De Luna-Peralta | Breathtaking Dalmadoodle | ITIS 3135</h1>
     </header>
     
     <main>
+        <h2>HTML Tables</h2>
+        <section class="tableList">
         <h3>My Tabular Data</h3>
-        <ol>
-            <li>&emsp;Anna Hull, amhull07@gmail.com</li>
-            <li>&emsp;Jimmy Neutron, jimtron@gmail.com</li>
-            <li>&emsp;Dwight Schrute, dwightschrute@gmail.com</li>
-            <li>&emsp;John Cena, jcena0101@hotmail.com</li>
-            <li>&emsp;Elon Musk, thelegend420@gmail.com</li>
-            <li>&emsp;Niner Norm, normtheniner@gmail.com</li>
-            <li>&emsp;D.I. von Briesen, dvonbri1@uncc.edu</li>
-        </ol>
-        
-        <h3 class="tableCaption">Employee Data in Complex Table</h3>
-        <figure>
-            <table class="complexTable">
+            <ol>
+                <li>&emsp;Anna Hull, amhull07@gmail.com</li>
+                <li>&emsp;Jimmy Neutron, jimtron@gmail.com</li>
+                <li>&emsp;Dwight Schrute, dwightschrute@gmail.com</li>
+                <li>&emsp;John Cena, jcena0101@hotmail.com</li>
+                <li>&emsp;Elon Musk, thelegend420@gmail.com</li>
+                <li>&emsp;Niner Norm, normtheniner@gmail.com</li>
+                <li>&emsp;D.I. von Briesen, dvonbri1@uncc.edu</li>
+            </ol>
+        </section>
+        <section class="complexSection">
+            <h3 class="tableCaption">Employee Data in Complex Table</h3>
+            <figure>
+                <table class="complexTable">
+                    <thead>
+                        <tr class="head">
+                            <th id="co1">Category</th>
+                            <th id="co2">Name</th>
+                            <th id="co3">Email</th>
+                            <th id="co4">Years of Service</th>
+                            <th id="co5">Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="odd">
+                            <td headers="co1 c1">CEO</td>
+                            <td headers="co2 c1">Anna Hull</td>
+                            <td headers="co3 c1">amhull07@gmail.com</td>
+                            <td headers="co4 c1">18</td>
+                            <td headers="co5 c1">$1,000,000</td>
+                        </tr>
+                        <tr>
+                            <td headers="co1 c2">CFO</td>
+                            <td headers="co2 c2">Jimmy Neutron</td>
+                            <td headers="co3 c2">jimtron@gmail.com</td>
+                            <td headers="co4 c2">1</td> 
+                            <td headers="co5 c2">$1</td>  
+                        </tr>
+                        <tr class="odd">
+                            <td headers="co1 c3">Assistant to the Regional Manager</td>
+                            <td headers="co2 c3">Dwight Schrute</td>
+                            <td headers="co3 c3">dwightschrute@gmail.com</td>
+                            <td headers="co4 c3">3</td>
+                            <td headers="co5 c3">$100,000</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" headers="co1 c4 c5 c6">Developer</td>
+                            <td headers="co2 c4">John Cena</td>
+                            <td headers="co3 c4">jcena0101@hotmail.com</td>
+                            <td headers="co4 c4">2</td>
+                            <td headers="co5 c4">$60,000</td>
+                        </tr>
+                        <tr class="odd">
+                            <td headers="co2 c5">Elon Musk</td>
+                            <td headers="co3 c5">thelegend420@gmail.com</td>
+                            <td headers="co4 c5">9</td>
+                            <td headers="co5 c5">$80,000</td> 
+                        </tr>
+                        <tr>
+                            <td headers="co2 c6">Niner Norm</td>
+                            <td headers="co3 c6">normtheniner@uncc.edu</td>
+                            <td headers="co4 c6">76</td>
+                            <td headers="co5 c6">$95,000</td>   
+                        </tr>
+                        <tr class="odd">
+                            <td headers="co1 c7">Lead Developer</td>
+                            <td headers="co2 c7">D.I. von Briesen</td>
+                            <td headers="co3 c7">dvonbri1@uncc.edu</td>
+                            <td headers="co4 c7">3</td>
+                            <td headers="co5 c7">$115,000</td>   
+                        </tr>
+                        <tr class="head">
+                            <td colspan="3" headers="co1 co2 co3 c8">Total Years of Service</td>
+                            <td headers="co4 c8">112</td>
+                            <td headers="co5 c8">$1,450,001</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <figcaption>Employee Information</figcaption>
+            </figure>
+        </section>
+        <section class="simpleSection">
+            <h3 class="tableCaption">Employee Data in Simple Table</h3>
+            <table class="simpleTable">
                 <thead>
                     <tr class="head">
-                        <th id="co1">Category</th>
-                        <th id="co2">Name</th>
-                        <th id="co3">Email</th>
-                        <th id="co4">Years of Service</th>
-                        <th id="co5">Salary</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Years of Service</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="odd">
-                        <td headers="co1 c1">CEO</td>
-                        <td headers="co2 c1">Anna Hull</td>
-                        <td headers="co3 c1">amhull07@gmail.com</td>
-                        <td headers="co4 c1">18</td>
-                        <td headers="co5 c1">$1,000,000</td>
+                            <td>Anna Hull</td>
+                            <td>amhull07@gmail.com</td>
+                            <td>18</td>                    
                     </tr>
                     <tr>
-                        <td headers="co1 c2">CFO</td>
-                        <td headers="co2 c2">Jimmy Neutron</td>
-                        <td headers="co3 c2">jimtron@gmail.com</td>
-                        <td headers="co4 c2">1</td> 
-                        <td headers="co5 c2">$1</td>  
+                            <td>Jimmy Neutron</td>
+                            <td>jimtron@gmail.com</td>
+                            <td>1</td>   
                     </tr>
                     <tr class="odd">
-                        <td headers="co1 c3">Assistant to the Regional Manager</td>
-                        <td headers="co2 c3">Dwight Schrute</td>
-                        <td headers="co3 c3">dwightschrute@gmail.com</td>
-                        <td headers="co4 c3">3</td>
-                        <td headers="co5 c3">$100,000</td>
+                            <td>Dwight Schrute</td>
+                            <td>dwightschrute@gmail.com</td>
+                            <td>3</td>   
                     </tr>
                     <tr>
-                        <td rowspan="3" headers="co1 c4 c5 c6">Developer</td>
-                        <td headers="co2 c4">John Cena</td>
-                        <td headers="co3 c4">jcena0101@hotmail.com</td>
-                        <td headers="co4 c4">2</td>
-                        <td headers="co5 c4">$60,000</td>
+                            <td>John Cena</td>
+                            <td>jcena0101@hotmail.com</td>
+                            <td>2</td>   
                     </tr>
                     <tr class="odd">
-                        <td headers="co2 c5">Elon Musk</td>
-                        <td headers="co3 c5">thelegend420@gmail.com</td>
-                        <td headers="co4 c5">9</td>
-                        <td headers="co5 c5">$80,000</td> 
+                            <td>Elon Musk</td>
+                            <td>thelegend420@gmail.com</td>
+                            <td>9</td>   
                     </tr>
                     <tr>
-                        <td headers="co2 c6">Niner Norm</td>
-                        <td headers="co3 c6">normtheniner@uncc.edu</td>
-                        <td headers="co4 c6">76</td>
-                        <td headers="co5 c6">$95,000</td>   
+                            <td>Niner Norm</td>
+                            <td>normtheniner@uncc.edu</td>
+                            <td>76</td>   
                     </tr>
                     <tr class="odd">
-                        <td headers="co1 c7">Lead Developer</td>
-                        <td headers="co2 c7">D.I. von Briesen</td>
-                        <td headers="co3 c7">dvonbri1@uncc.edu</td>
-                        <td headers="co4 c7">3</td>
-                        <td headers="co5 c7">$115,000</td>   
-                    </tr>
-                    <tr class="head">
-                        <td colspan="3" headers="co1 co2 co3 c8">Total Years of Service</td>
-                        <td headers="co4 c8">112</td>
-                        <td headers="co5 c8">$1,450,001</td>
+                            <td>D.I. von Briesen</td>
+                            <td>dvonbri1@uncc.edu</td>
+                            <td>3</td>   
                     </tr>
                 </tbody>
             </table>
-            <figcaption>Employee Information</figcaption>
-        </figure>
-            <h3 class="tableCaption">Employee Data in Simple Table</h3>
-        <table class="simpleTable">
-            <thead>
-                <tr class="head">
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Years of Service</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="odd">
-                        <td>Anna Hull</td>
-                        <td>amhull07@gmail.com</td>
-                        <td>18</td>                    
-                </tr>
-                <tr>
-                        <td>Jimmy Neutron</td>
-                        <td>jimtron@gmail.com</td>
-                        <td>1</td>   
-                </tr>
-                <tr class="odd">
-                        <td>Dwight Schrute</td>
-                        <td>dwightschrute@gmail.com</td>
-                        <td>3</td>   
-                </tr>
-                <tr>
-                        <td>John Cena</td>
-                        <td>jcena0101@hotmail.com</td>
-                        <td>2</td>   
-                </tr>
-                <tr class="odd">
-                        <td>Elon Musk</td>
-                        <td>thelegend420@gmail.com</td>
-                        <td>9</td>   
-                </tr>
-                <tr>
-                        <td>Niner Norm</td>
-                        <td>normtheniner@uncc.edu</td>
-                        <td>76</td>   
-                </tr>
-                <tr class="odd">
-                        <td>D.I. von Briesen</td>
-                        <td>dvonbri1@uncc.edu</td>
-                        <td>3</td>   
-                </tr>
-            </tbody>
-        </table>
+        </section>
     </main>
 
     <footer>
-        <h3><a href="/itis3135/delunadesigns.co/index.html">Designed by De Luna's Designs &copy; 2022</a></h3>
+        <h3><a href="delunadesigns.co/index.html">Designed by De Luna's Designs &copy; 2022</a></h3>
+        <div class="media">
+            <ul>
+                <a href="https://www.freecodecamp.org/bryant_deluna" target="_blank"><li><i class="fa-brands fa-free-code-camp"></i></li></a>
+                <a href="https://www.codecademy.com/profiles/bryant_deluna" target="_blank"><li><i class="fa-solid fa-code"></i></li></a>
+                <a href="https://github.com/bryantd0208" target="_blank"><li><i class="fa-brands fa-github"></i></li></a>
+                <a href="https://www.linkedin.com/in/bryant-de-luna-peralta-51a0671b8/" target="_blank"><li><i class="fa-brands fa-linkedin"></i></li></a>
+                <a href="https://uncc.instructure.com/courses/178981/users/164769" target="_blank"><li><i class="fa-solid fa-graduation-cap"></i></li></a>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>

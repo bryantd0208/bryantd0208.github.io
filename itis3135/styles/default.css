@@ -1,0 +1,358 @@
+@import  url("https://fonts.googleapis.com/css?family-Open+Sans");
+/* Default Stuff Styling*/
+html {
+    margin: 0;
+    padding: 0;
+}
+html a{
+    color: #eee;
+    text-decoration: none;
+}
+body {
+    background-color: #91adc2;
+}
+.navbar nav {
+    background-color: #2d3047;
+    width:100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    font-family: sans-serif;
+}
+.navbar nav ul{
+    width:75%;
+    height: 100%;
+    margin: 0 auto;
+    list-style: none;
+    transition: all 0.5s ease;
+}
+
+.navbar nav ul li{
+    width: 25%;
+    float: left;
+    text-align: center;
+    color: #eee;
+    padding: 24px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    position: relative;
+    text-decoration: none;
+}
+
+.navbar nav ul li:hover{
+    color: #ea3b50;
+    box-shadow: inset 0 5px #ea3b50;
+}
+.navbar nav ul li ul.sub-nav{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.338);
+    width: 100%;
+    height: 180px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.14), -1px 0px 1px rgba(0,0,0,0.14);
+    top: 75px;
+    left: 0px;
+    visibility: hidden;
+    opacity: 0;
+}
+.navbar nav ul li ul.sub-nav li{
+    color: #eee;
+    font-size: 14px;
+    width: 90%;
+    padding: 20px 0;
+    text-decoration: none;
+}
+
+.navbar nav ul li ul.sub-nav li:hover a{
+    color: #ea3b50;
+}
+.navbar nav ul li:hover ul.sub-nav{
+    visibility: visible;
+    opacity: 1;
+}
+header{
+    padding-top: 4%;
+    text-align: center;
+}
+h1 {
+    color: #011627;
+    font-family: serif;
+    font-size: 50px
+}
+
+main{
+    padding-top: 30px;
+    padding-bottom: 40px;
+    color: rgba(238, 238, 238, 0.913);
+    font-family: serif;
+    background-color: #ba130091;
+    width: 80%;
+    margin: 0% auto;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+h2{
+    font-size: 40px;
+    text-align: center;
+}
+h3{
+    font-size: 25px;
+}
+figure figcaption{
+    font-weight: lighter;
+    font-size: larger;
+    color:#eee;
+}
+table .head{
+    background-color: rgba(89, 89, 90, 0.81);
+    font-weight: bold;
+    text-align: center;
+}
+table tr{
+    background-color: rgba(150, 161, 165, 0.81)
+}
+table .odd{
+    background-color: rgba(32, 167, 215, 0.81)
+}
+footer {
+    background-color: #2d3047;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer h3{
+    color: white;
+    font-family: serif;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+footer h3 a:hover {
+    color: #ea3b50;
+    transition: all 0.5s ease;
+}
+footer .media{
+    margin: auto 0%;
+    text-align: center;
+    width: 98%
+}
+footer a li{
+    list-style: none;
+    margin: 0px 5px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 10px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: .5s;
+}
+a li:hover{
+    color: #ea3b50;
+    border: 1px solid #ea3b50;
+    transition: .5s;
+}
+
+/* Home styling */
+.row {
+    padding-top:150px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.column {
+    float: left;
+  }
+  
+.left {
+    width: 65%;
+  }
+  
+.right {
+    width: 35%;
+  }
+.placeholder{
+    background-color:rgba(255, 255, 255, 0.65);
+    height: 500px;
+    width: 500px;
+}
+
+
+/* About Me */
+main .introPic img{
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+    border-radius: 50px;
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+}
+main figure figcaption {
+    color: #eee;
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Make sure that padding behaves as expected */
+.programming{
+    background-color: #36494E;
+    width: 60%;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+    border-radius: 25px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 20px 50px;
+    padding-bottom: 40px;
+}
+.comfort{
+    display: inline-block;
+}
+.notComfy{
+    width: 400px;
+    text-align: left;
+}
+.expert{
+    width: 150px;
+    text-align: left;
+}
+* {box-sizing:border-box}
+main .row{
+    color: #eee;
+    display:table-row;
+    justify-content: center;
+    
+}
+  
+.left {
+    width: 25%;
+  }
+  
+.right {
+    width: 40%;
+}
+/* Container for skill bars */
+.container {
+  width: 400px;
+  background-color: rgba(221, 221, 221, 0.636); /* Grey background */
+  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+  border-radius: 9px;
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-right: 10px;
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+  border-radius: 9px;
+}
+
+.html {width: 20%; background-color: #ff8400bf;}
+.python {width: 75%; background-color: #04aa6dc6;}
+.java {width: 80%; background-color: #915a07b2;}
+.c {width: 40%; background-color: #0d4cd3a5;}
+.sql {width: 25%; background-color: #e3f11ba6;}
+
+.classes ul{
+    color: rgba(221, 221, 221, 0.88);
+    text-align: center;
+    display: table; 
+    margin: 0 auto;
+    text-align: left;
+    font-size: large;
+}
+.classes ul li{
+    padding-bottom: 5px;
+}
+/* Course Assignments */
+.assignmentLinks ul li{
+    font-size: 20px;
+    font-weight:lighter;
+    text-transform:capitalize;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    position: relative;
+    list-style: none;
+}
+
+
+.assignmentLinks ul li a:hover{
+    color: #ea3b50;
+    transition: all 0.5s ease;
+}
+/* HTML Tables */
+main .tableList{
+    padding-left: 5%;
+    text-align: left;
+}
+main ol{
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifs;
+    font-size: 20px;
+}
+
+main ol li{
+    padding-bottom: 8px;
+}
+.complexTable, .simpleTable{
+    color:#eee;
+    border: 2px solid #eee;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    padding: 0.2rem;
+    width:60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+main .tableCaption, figcaption{
+    padding-bottom: 15px;
+    padding-top: 30px;
+    font-weight: bolder;
+    font-size:x-large;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+
+}
+
+/* HTML Forms */
+main .mainForm {
+    margin-left: auto;
+    margin-right: auto;
+}
+main .mainField{
+    background-color: #414141;
+    text-align: left;
+    width:100%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+button{
+    background-color: #0052ec9f;
+    color: #eeeeee;
+}
+
+/* CRAP Website Evaluation */
+.rollpark, .yaleArt{
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: left;
+}
+.rollpark h3, .yaleArt h3{
+    font-size: 30px;
+}
+.rollpark h3:hover a, .yaleArt h3:hover a{
+    color: #2eef7e;
+    transition: all 0.5s ease;
+}
+.rollpark p, .yaleArt p{
+    font-size: larger;
+}
+.rollPark li, .yaleArt li{
+    padding-bottom: 10px;
+}
