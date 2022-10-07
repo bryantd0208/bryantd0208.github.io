@@ -51,7 +51,7 @@ body {
     position: absolute;
     background: rgba(0, 0, 0, 0.338);
     width: 100%;
-    height: 180px;
+    height:auto;
     box-shadow: 1px 1px 2px rgba(0,0,0,0.14), -1px 0px 1px rgba(0,0,0,0.14);
     top: 75px;
     left: 0px;
@@ -360,4 +360,31 @@ button{
 }
 .rollPark li, .yaleArt li{
     padding-bottom: 10px;
+}
+
+/* First Script */
+.scriptPrompt{
+    text-align: left;
+    padding: 20px;
+    margin-left: 15%;
+}
+.colorForm{
+    background-color: white;
+    width: 30%;
+    /* margin: 0 auto; */
+    padding: 30px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+    border-radius: 20px;
+}
+.formBox{
+    width: 60%;
+    margin: 0 auto;
+    background-color: #515151;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+    border-radius: 20px;
+    padding: 10px;
+}
+.scriptPrompt label,.scriptPrompt h3{
+    margin: 0 auto;
+    font-size: larger;
 }
