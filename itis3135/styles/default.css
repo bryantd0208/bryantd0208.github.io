@@ -388,3 +388,16 @@ button{
     margin: 0 auto;
     font-size: larger;
 }
+
+/* Polygon Image */
+.polygonPrompt{
+    margin: 0 auto;
+
+}
+.polygonImage{
+    background-color: #eee;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+    border-radius: 20px;
+    width: 50%;
+    margin-top: 20px;
+}
