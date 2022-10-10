@@ -94,7 +94,7 @@ function executePolygon()
     shape = getShape();
     document.getElementById("polygonResponse").innerHTML = shape;
     /* Uses shape name to change image */
-    document.getElementById("polygonImage").src="/itis3135/images/polygonShapes/" + shape + ".png"
+    document.getElementById("polygonImage").src="images/polygonShapes/" + shape + ".png"
 }
 function getShape()
 {
