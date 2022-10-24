@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div data-include="components/head.html"></div>
+    <title>Bryant De Luna-Peralta|Breathtaking Dalmadoodle|ITIS 3135|Tables</title>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    
+    <main>
+        <h2>HTML Tables</h2>
+        <section class="tableList">
+        <h3>My Tabular Data</h3>
+            <ol>
+                <li>&emsp;Anna Hull, amhull07@gmail.com</li>
+                <li>&emsp;Jimmy Neutron, jimtron@gmail.com</li>
+                <li>&emsp;Dwight Schrute, dwightschrute@gmail.com</li>
+                <li>&emsp;John Cena, jcena0101@hotmail.com</li>
+                <li>&emsp;Elon Musk, thelegend420@gmail.com</li>
+                <li>&emsp;Niner Norm, normtheniner@gmail.com</li>
+                <li>&emsp;D.I. von Briesen, dvonbri1@uncc.edu</li>
+            </ol>
+        </section>
+        <section class="complexSection">
+            <h3 class="tableCaption">Employee Data in Complex Table</h3>
+            <figure>
+                <table class="complexTable">
+                    <thead>
+                        <tr class="head">
+                            <th id="co1">Category</th>
+                            <th id="co2">Name</th>
+                            <th id="co3">Email</th>
+                            <th id="co4">Years of Service</th>
+                            <th id="co5">Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="odd">
+                            <td headers="co1 c1">CEO</td>
+                            <td headers="co2 c1">Anna Hull</td>
+                            <td headers="co3 c1">amhull07@gmail.com</td>
+                            <td headers="co4 c1">18</td>
+                            <td headers="co5 c1">$1,000,000</td>
+                        </tr>
+                        <tr>
+                            <td headers="co1 c2">CFO</td>
+                            <td headers="co2 c2">Jimmy Neutron</td>
+                            <td headers="co3 c2">jimtron@gmail.com</td>
+                            <td headers="co4 c2">1</td> 
+                            <td headers="co5 c2">$1</td>  
+                        </tr>
+                        <tr class="odd">
+                            <td headers="co1 c3">Assistant to the Regional Manager</td>
+                            <td headers="co2 c3">Dwight Schrute</td>
+                            <td headers="co3 c3">dwightschrute@gmail.com</td>
+                            <td headers="co4 c3">3</td>
+                            <td headers="co5 c3">$100,000</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" headers="co1 c4 c5 c6">Developer</td>
+                            <td headers="co2 c4">John Cena</td>
+                            <td headers="co3 c4">jcena0101@hotmail.com</td>
+                            <td headers="co4 c4">2</td>
+                            <td headers="co5 c4">$60,000</td>
+                        </tr>
+                        <tr class="odd">
+                            <td headers="co2 c5">Elon Musk</td>
+                            <td headers="co3 c5">thelegend420@gmail.com</td>
+                            <td headers="co4 c5">9</td>
+                            <td headers="co5 c5">$80,000</td> 
+                        </tr>
+                        <tr>
+                            <td headers="co2 c6">Niner Norm</td>
+                            <td headers="co3 c6">normtheniner@uncc.edu</td>
+                            <td headers="co4 c6">76</td>
+                            <td headers="co5 c6">$95,000</td>   
+                        </tr>
+                        <tr class="odd">
+                            <td headers="co1 c7">Lead Developer</td>
+                            <td headers="co2 c7">D.I. von Briesen</td>
+                            <td headers="co3 c7">dvonbri1@uncc.edu</td>
+                            <td headers="co4 c7">3</td>
+                            <td headers="co5 c7">$115,000</td>   
+                        </tr>
+                        <tr class="head">
+                            <td colspan="3" headers="co1 co2 co3 c8">Total Years of Service</td>
+                            <td headers="co4 c8">112</td>
+                            <td headers="co5 c8">$1,450,001</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <figcaption>Employee Information</figcaption>
+            </figure>
+        </section>
+        <section class="simpleSection">
+            <h3 class="tableCaption">Employee Data in Simple Table</h3>
+            <table class="simpleTable">
+                <thead>
+                    <tr class="head">
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Years of Service</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="odd">
+                            <td>Anna Hull</td>
+                            <td>amhull07@gmail.com</td>
+                            <td>18</td>                    
+                    </tr>
+                    <tr>
+                            <td>Jimmy Neutron</td>
+                            <td>jimtron@gmail.com</td>
+                            <td>1</td>   
+                    </tr>
+                    <tr class="odd">
+                            <td>Dwight Schrute</td>
+                            <td>dwightschrute@gmail.com</td>
+                            <td>3</td>   
+                    </tr>
+                    <tr>
+                            <td>John Cena</td>
+                            <td>jcena0101@hotmail.com</td>
+                            <td>2</td>   
+                    </tr>
+                    <tr class="odd">
+                            <td>Elon Musk</td>
+                            <td>thelegend420@gmail.com</td>
+                            <td>9</td>   
+                    </tr>
+                    <tr>
+                            <td>Niner Norm</td>
+                            <td>normtheniner@uncc.edu</td>
+                            <td>76</td>   
+                    </tr>
+                    <tr class="odd">
+                            <td>D.I. von Briesen</td>
+                            <td>dvonbri1@uncc.edu</td>
+                            <td>3</td>   
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.js"></script>
+    <script src="scripts/default.js"></script>
+</body>
+</html>
