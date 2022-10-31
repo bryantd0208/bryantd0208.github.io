@@ -4,9 +4,361 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bryant De Luna-Peralta|Breathtaking Dalmadoodle|ITIS 3135|Midterm</title>
+    <script src="https://kit.fontawesome.com/1c8eefd787.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url(images/casino_background.jpeg);
+            color: white;
+        }
+        header {
+            text-align: center;
+        }
+        .pageNav {
+            background-color: #707070;
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            font-size: 1.3vw;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+            border-radius: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        .red:hover {
+            color: #BB000E;
+        }
+        .black:hover {
+            color: #1C1C1C;
+        }
+        main {
+            padding: 30px 12%;
+        }
+        .cardSection {
+            padding: 15px;
+        }
+        h1 {
+            font-size: 40px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 30px;
+        }
+        h3 {
+            font-size: 25px;
+        }
+        h4{
+            font-size: 20px;
+        }
+        p,li{
+            font-size: 18px;
+        }
+        li {
+            padding-bottom: 15px;
+        }
+        .center {
+            margin: 0 auto;
+            justify-content: center;
+            text-align: center;
+        }
+        #pokerRanking {
+            width: 30%;
+            min-width: 150px;
+            float: right;
+            padding-right: 2vw;
+            padding-left: 30px;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+            border-radius: 60px;
+        }
+        .gameImage {
+            text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+            border-radius: 20px;
+            padding: 15px;
+        }
+        .gameLink {
+            margin-bottom: 70px;
+        }
+        .mainFooter {
+        background-color: #5e5e5e;
+        padding: 15px;
+        margin-top: 20px;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+        border-radius: 20px;
+        }
+        .validation{
+            text-align: center;
+            padding: 35px;
+        }
+        footer h3{
+            color: white;
+            font-family: serif;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+        footer h3 a:hover {
+            color: #2eef7e;
+            transition: all 0.5s ease;
+        }
+        footer .media{
+            margin: auto 0%;
+            text-align: center;
+            width: 98%
+        }
+        footer li{
+            list-style: none;
+            margin: 0px 5px;
+            display: inline-block;
+            font-size: 20px;
+            padding: 10px 10px;
+            color: #fff;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            transition: .5s;
+        }
+        footer li:hover{
+            color: #2eef7e;
+            border: 1px solid #2eef7e;
+            transition: .5s;
+        }
+    </style>
+    <!-- Embedded Javascript -->
+    <script>
+        // Passes through different divs with target class to set to hidden or not.
+        let pageName = "";
+        function show(shown) {
+          pageNameArray = document.getElementsByClassName("target");
+          for (let i = 0; i < pageNameArray.length; i++) {
+              if(pageNameArray[i].id == shown){
+                   pageNameArray[i].style.display = "inherit";
+              }
+              else {
+                  pageNameArray[i].style.display = "none";
+              }
+            }
+        }
+    </script>
 </head>
-<body>
-    
+<body onload="show('home');">
+        <header>
+            <h1>Card Games 101</h1>
+            <div class="pageNav">
+                ♥<a href="#" onclick="show('home');" class="red">&nbsp;&nbsp;Home&nbsp;&nbsp;</a>♠
+                <a href="#" onclick="show('blackjack');" class="black">&nbsp;&nbsp;Blackjack&nbsp;&nbsp;</a>♦
+                <a href="#" onclick="show('poker');" class="red">&nbsp;&nbsp;Poker&nbsp;&nbsp;</a>♣
+                <a href="#" onclick="show('cheat');" class="black">&nbsp;&nbsp;Cheat&nbsp;&nbsp;</a>♥
+                <a href="#" onclick="show('slapjack');" class="red">&nbsp;&nbsp;SlapJack&nbsp;&nbsp;</a>♠
+                <a href="#" onclick="show('spades');" class="black">&nbsp;&nbsp;Spades&nbsp;&nbsp;</a>♦
+                <a href="#" onclick="show('game');" class="red">&nbsp;&nbsp;Game&nbsp;&nbsp;</a>♣
+            </div>
+        </header>
+
+        <!-- Home Page -->
+        <main>
+            <section id="home" class="target">
+                <h2>Home</h2>
+                <section class="cardSection">
+                    <h3>Why Card Games?</h3>
+                    <p>Card Games have existed for over a millennium and are still popular today even if through different mediums. It is estimated that there are anywhere from 1,000 to 10,000 different card games based on what you define as a card game. This is crazy to think about since truthfully there are only 52 (no joker cards) total cards in a deck. Even knowing this there is actually 52! (8e67) ways of shuffling a single deck! Cards although may be simple paper with designs on them, have the ability to entertain almost anyone as there is surely a game made for everyone.</p>
+                </section>
+                <section class="cardSection">
+                    <h3>What are some card games?</h3>
+                    <p>As mentioned earlier there are thousands of card games but I have provided some of the more popular ones below that will be our primary focus throughout this page:</p>
+                    <ul>
+                        <li>Blackjack</li>
+                        <li>Poker</li>
+                        <li>Cheat (aka BS)</li>
+                        <li>SlapJack</li>
+                        <li>Spades</li>
+                    </ul>
+                </section>
+                <section class="cardSection">
+                    <h3>What are the cards?</h3>
+                    <p>So now that we know a little about card games, you may be wondering what are the actual cards? Feel free to follow along with the image below to better see how the cards actually look. Well there are 4 different suits each which have 13 cards. The easier to distinguish are the number cards ranging from 2-10. Beyond the number cards we have the face cards which are the Jack, Queen, King. The value of these cards change depending on the game that is being played. The last card is the Ace card which is marked by the letter A on the card. Now that we know the cards we can continue to the suites. Each of these cards exist in each of the suites. These suites are also further broken down into colors which is red and black. The diamond and heart suites are red while the clubs and spades are black. This detail can have significance in some games but not in all. </p>
+                    <div class="center">
+                        <img src="images/deckofcards.png" alt="All 52 cards in the deck" width="400px">
+                    </div>
+                </section>
+            </section>
+            <!-- Blackjack Page -->
+            <section id="blackjack" class="target">
+                <h2>Blackjack</h2>
+                <section class="cardSection">
+                    <h3>What is the objective?</h3>
+                    <p>At its core blackjack is quite simple. Your main goal is to beat the dealer. You want to get as close to 21 without going over. This leads to the next part.</p>
+                    <h4>How do you beat the dealer?</h4>
+                    <ul>
+                        <li>Getting a hand value larger then that of the dealer</li>
+                        <li>The dealer bust(player gets a hand value of over 21)</li>
+                        <li>Pulling black jack which is a starting value of 21</li>
+                    </ul>
+                    <h4>How do you lose to the dealer?</h4>
+                    <ul>
+                        <li>You bust while the dealer does not.</li>
+                        <li>The dealer obtains a higher value then you</li>
+                    </ul>
+                </section>
+                <section class="cardSection">
+                    <h3>How do you calculate your hand value?</h3>
+                    <p>In blackjack, to calculate you hand value you take the sum of both your cards. Number cards are what their number says while all face cards count for 10. The final card is a special one which is the ace. The ace card can count for either 11 or 1 depending if you are over 21 or not</p>
+                    <div class="center">
+                        <img src="images/blackjack_value.jpeg" alt="Value of cards in Blackjack" width="400px">
+                    </div>
+                </section>
+                <section class="cardSection center">
+                    <h3>Detailed Video</h3>
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PljDuynF-j0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+            </section>
+            <!-- Poker Page -->
+            <section id="poker" class="target">
+                <h2>Poker</h2>
+                <section class="cardSection">
+                    <h3>How do you win?</h3>
+                    <p>
+                        To win at poker, you either have to bluff your opponents or hold the best hand at the end (aka the “showdown”). In poker, you are looking to make the best possible five card hand. Your holdings can range from a high card up to a Royal Flush.
+                    </p>
+                </section>
+                <section class="cardSection">
+                    <h3>What are the hand rankings?</h3>
+                    <p>
+                        <img src="images/poker_rankings.jpeg" id="pokerRanking">
+                        The rankings are as follow:
+                        <ul>
+                            <li><strong>Royal Flush:</strong> This is the rarest hand and because of that it is the highest ranking hand. This is when you have 10, J, Q, K, A of the same suite.</li>
+                            <li><strong>Straight Flush:</strong> This is a hand that consists of five consecutive cards of the same suit.</li>
+                            <li><strong>4-of-a-Kind:</strong> This is a hand where you have all 4 of one card. For example you can have K, 9, 9, 9, 9.</li>
+                            <li><strong>Full House:</strong> Sometimes this may be refered to as a boat, but it consits of have a 3-of-a-Kind and a Pair in a single hand.</li>
+                            <li><strong>Flush:</strong> This is a hand in which you have matching cards of the same suite. Their values do no matter unless someone else also has a flush.</li>
+                            <li><strong>Straight:</strong> Consists of having a hand in which cards are consecutive regardless of the suite.</li>
+                            <li><strong>3-of-a-Kind</strong> Consits of having three of the same card values.</li>
+                            <li><strong>Two Pair:</strong> Consits of having two pairs. The final card is then your considered your kicker.</li>
+                            <li><strong>One Pair:</strong> Consits of having two of the same card value.</li>
+                            <li><strong>High Card:</strong> If all else fails or multiple people have same ranked hands then this is the final check. The cards are assigned values and thus whichever hand has high card is the one that takes it.</li>
+                        </ul>
+                    </p>
+                </section>
+                <section class="cardSection">
+                    <h3>How to play?</h3>
+                    <p>
+                        To begin there are three community cards dealt(the flop) which is ended with a round of betting starting from the person left of the dealer. After completing the round, another community card is dealt one again for players to attempt to make the best five-card hand. This round is then finished with another wave of betting starting again from the left of the dealer and going through each person still active. In the final round the last community card is dealt in which the final bets are set for the showdown. Players now reveal hands (starting with last person to bet) and the one with highest rank hand wins.
+                    </p>
+                </section>
+                <section class="cardSection center">
+                    <h3>Detailed Video</h3>
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JOomXP-r1wY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+            </section>
+            <!-- Cheat Page -->
+            <section id="cheat" class="target">
+                <h2>Cheat</h2>
+                <section class="cardSection">
+                    <h3>What is the objective?</h3>
+                    <p>The objective of Cheat is quite simple. The goal is to be the first player to get rid of all their cards.</p>
+                </section>
+                <section class="cardSection">
+                    <h3>How do you play?</h3>
+                    <h4>How to setup?</h4>
+                    <p>In order to set up you must take the entire deck and split among all the players(3-10 players). There are no stockpiles in this game as all cards will be within the hands of all players.</p>
+                    <h4>How to play?</h4>
+                    <p>Play begins with the player to the left of the dealer. He places the Aces in his hand facedown on the discard pile and announces his play to the table: “One Ace.” If the player does not have any Aces, or if he wishes to get rid of more than one card, he may bluff and play non-Ace cards while announcing: “Two Aces.” The next player plays 2s, the next player plays 3s, and so on. If a player doesn not believe an announcement, he can call out, “Cheat!” The person who played the cards must turn them over and show the challenger whether he is bluffing or not. A player who is caught bluffing must pick up the entire discard pile and add it to his hand. If a challenged player is not bluffing, then the challenger must pick up the discard pile. When the rank to play reaches Kings, it then goes back to Aces and the numbers start again.</p>
+                    <div class="center">
+                        <img src="images/cheat_example.jpeg" alt="Value of cards in Blackjack" width="400px">
+                    </div>
+                </section>
+                <section class="cardSection center">
+                    <h3>Detailed Video</h3>
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/AC-JWgeZbv4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+            </section>
+            <!-- Slapjack Page -->
+            <section id="slapjack" class="target">
+                <h2>Slapjack</h2>
+                <section class="cardSection">
+                    <h3>What is the objective?</h3>
+                    <p>The goal is to win all the cards, by being first to slap each Jack as it is played to the center.</p>
+                </section>
+                <section class="cardSection">
+                    <h3>How do you play?</h3>
+                    <h4>How to deal?</h4>
+                    <p>Cards are dealt one at a time, face down, to each player until all the cards have been dealt. The hands do not have to come out even. Without looking at any of the cards, each player squares up their hand into a neat pile in front of them.
+                    </p>
+                    <h4>How to play?</h4>
+                    <p>The first player will be the one left of the dealer. One player at a time, each player will lift one card at a time from their pile and places it face up in the center of the table. If the card played is a Jack, all players will try to "slap" it. Whoever is the first to slap it will be able to take all the cards at the center and must put it at the bottom of their pile and shuffle it. If more than one hand slaps the pile then whosever hand is on top of the pile wins the Jack and pile. If a player slaps and it is not a Jack then the player who slapped gives their next card to the player who played the last card. If a player runs out of cards then they must wait until the next Jack to try and smack and claim the pile. However, if they fail to claim that Jack and pile, then the player is out of the game.
+                    </p>
+                    <div class="center">
+                        <img src="images/slapjack.jpeg" alt="Value of cards in Blackjack" width="400px">
+                    </div>
+                </section>
+                <section class="cardSection center">
+                    <h3>Detailed Video</h3>
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PqXT9IvD-cU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+            </section>
+            <!-- Spades Page -->
+            <section id="spades" class="target">
+                <h2>Spades</h2>
+                <section class="cardSection">
+                    <h3>What is the objective?</h3>
+                    <p>To win at least the number of tricks bid.</p>
+                </section>
+                <section class="cardSection">
+                    <h3>Game Breakdown</h3>
+                    <h4>How to deal?</h4>
+                    <p>The first dealer is chosen by a draw for high card, and thereafter the turn to deal proceeds clockwise. The entire deck is dealt one at a time, face down, beginning on the dealer's left. The players then pick up their cards and arrange them by suits.
+                    </p>
+                    <h4>What is Bidding?</h4>
+                    <p>Each player decides how many tricks they will be able to take. The player to the dealer's left starts the bidding and, in turn, each player states how many tricks they expect to win. There is only one round of bidding, and the minimum bid is One. Every player must make a bid; no player may pass. No suit is named in the bid, for as the name of the game implies, spades are always trump.
+                    </p>
+                    <h4>How do you actually play?</h4>
+                    <p>The game is scored by hands, and the winner must make a certain number of points, which is decided before the game begins. Five hundred points is common, but 200 points is suitable for a short game. The player on the dealer's left makes the opening lead, and players must follow suit, if possible. If a player cannot follow suit, they may play a trump or discard. The trick is won by the player who plays the highest trump or if no trump was played, the player who played the highest card in the suit led. The player who wins the trick leads next. Play continues until none of the players have any cards left. Each hand is worth 13 tricks. Spades cannot be led unless played previously or player to lead has nothing but Spades in his hand.
+                    </p>
+                    <h4>How do you keep score?</h4>
+                    <p>For making the contract (the number of tricks bid), the player scores 10 points for each trick bid, plus 1 point for each overtrick. For example, if the player's bid is Seven and they make seven tricks, the score would be 70. If the bid was Five and the player won eight tricks, the score would be 53 points: 50 points for the bid, and 3 points for the three overtricks. In some games, overtricks are called "bags" and a deduction of 100 points is made every time a player accumulates 10 bags. Thus, the object is always to fulfill the bid exactly. If the player "breaks contract," that is, if they take fewer than the number of tricks bid, the score is 0. For example, if a player bids Four and wins only three tricks, no points are awarded. One of the players is the scorer and writes the bids down, so that during the play and for the scoring afterward, this information will be available to all the players. When a hand is over, the scores should be recorded next to the bids, and a running score should be kept so that players can readily see each other's total points. If there is a tie, then all players participate in one more round of play.
+                    </p>
+                </section>
+                <section class="cardSection center">
+                    <h3>Detailed Video</h3>
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Z5BTSevuuqs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+            </section>
+            <!-- Game Page -->
+            <section id="game" class="target">
+                <h2>Card Games</h2>
+                <h3 class="center">Click on the images to be able to play these games!</h3>
+                <div class="gameLink center">
+                    <h4>cardgames.io</h4>
+                    <a href="https://cardgames.io/" target="_blank"><img src="images/cardgames_picture.png" alt="Picture of CARDGAMES.IO" width="30%" class="gameImage"></a>
+                </div>
+                <div class="gameLink center">
+                    <h4>arkadium.com</h4>
+                    <a href="https://www.arkadium.com/free-online-games/card/" target="_blank"><img src="images/arkadium_picture.png" alt="Picture of CARDGAMES.IO" width="30%" class="gameImage"></a>
+                </div>
+                <div class="gameLink center">
+                    <h4>usatoday.com</h4>
+                    <a href="https://games.usatoday.com/category/card" target="_blank"><img src="images/usatoday_picture.png" alt="Picture of CARDGAMES.IO" width="30%" class="gameImage"></a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="mainFooter">
+                <h3><a href="../delunasdesigns.co/">Designed by Deluna's Designs inc. &copy; 2022</a></h3>
+            </div>
+            <div class="validation">
+                <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+                    <img src="images/button-valid-html5.gif" width="88" height="31" alt="Validate webpage HTML.">
+                </a>            
+                <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+                    <img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
+                </a>
+            </div>
+        </footer>
+        <script>
+            document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
 </body>
 </html>
