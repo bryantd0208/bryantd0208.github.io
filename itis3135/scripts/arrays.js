@@ -15,7 +15,7 @@ function addSalary()
     var enteredName = document.getElementById("person").value;
 
     enteredSalary = parseFloat(enteredSalary);
-    if(enteredName != "none" && enteredSalary >= 0) 
+    if(enteredName !== "" && enteredSalary >= 0) 
     {
         if(personArray.includes(enteredName))
         {
@@ -26,7 +26,7 @@ function addSalary()
             salaryArray.push(enteredSalary);
         }
     }
-    else if (enteredName == "none"){alert("No Employee Selected");}
+    else if (enteredName === ""){alert("No Employee Selected");}
     else{alert("Invalid Salary");}
     document.getElementById("salary").value = "";
     document.getElementById("person").focus();

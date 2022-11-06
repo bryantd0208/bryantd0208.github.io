@@ -14,24 +14,86 @@
         header {
             text-align: center;
         }
-        .pageNav {
+        
+        .navbar nav {
             background-color: #707070;
-            width: 50%;
             margin: 0 auto;
-            padding: 20px;
-            font-size: 1.3vw;
+            width:78%;
+            height: 75px;
+            font-family: sans-serif;
             text-shadow: 0 1px 2px rgba(0,0,0,0.6);
-            border-radius: 20px;
+            border-radius: 20px; 
+        }
+        .red:hover {
+            color: #BB000E;
+            transition: all 0.5s ease;
+        }
+        .black:hover {
+            color: #1C1C1C;
+            transition: all 0.5s ease;
+        }
+        .navbar nav ul{
+            width:100%;
+            height: 100%;
+            margin: 0 auto;
+            list-style: none;
+            transition: all 0.5s ease;
+        }
+        .navbar nav ul li{
+            width: 13%;
+            float: left;
+            text-align: center;
+            color: #eee;
+            padding: 24px 1vw;
+            font-size: 0.95vw;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            position: relative;
+            text-decoration: none;
+        }
+        .navbar nav ul li:hover {
+            box-shadow: inset 0 5px #eee;
+        }
+        .navbar nav ul li:hover .red{
+            color: #BB000E;
+        }
+        .navbar nav ul li:hover .black{
+            color: #1C1C1C;
+        }
+        .navbar nav ul li ul.sub-nav{
+            position:absolute;
+            background: #707070cd;;
+            width: 75%;
+            height:auto;
+            box-shadow: 1px 1px 2px #7070700a, -1px 0px 1px #7070700a;
+            visibility: hidden;
+            transition: all 0.5s ease;
+            opacity: 0;
+        }
+        .navbar nav ul li ul.sub-nav li{
+            color: #eee;
+            font-size: 0.8vw;
+            width: 100%;
+            padding: 20px 0;
+            text-decoration: none;
+
+        }
+
+        .navbar nav ul li ul.sub-nav li:hover{
+            box-shadow: inset 5px 0 #eee;
+        }
+        .navbar nav ul li ul.sub-nav li:hover a {
+            color: #eee;
+        }
+        .navbar nav ul li:hover ul.sub-nav{
+            visibility: visible;
+            opacity: 1;
         }
         a {
             text-decoration: none;
             color: white;
-        }
-        .red:hover {
-            color: #BB000E;
-        }
-        .black:hover {
-            color: #1C1C1C;
         }
         main {
             padding: 30px 12%;
@@ -144,19 +206,31 @@
 <body onload="show('home');">
         <header>
             <h1>Card Games 101</h1>
-            <div class="pageNav">
-                ♥<a href="#" onclick="show('home');" class="red">&nbsp;&nbsp;Home&nbsp;&nbsp;</a>♠
-                <a href="#" onclick="show('blackjack');" class="black">&nbsp;&nbsp;Blackjack&nbsp;&nbsp;</a>♦
-                <a href="#" onclick="show('poker');" class="red">&nbsp;&nbsp;Poker&nbsp;&nbsp;</a>♣
-                <a href="#" onclick="show('cheat');" class="black">&nbsp;&nbsp;Cheat&nbsp;&nbsp;</a>♥
-                <a href="#" onclick="show('slapjack');" class="red">&nbsp;&nbsp;SlapJack&nbsp;&nbsp;</a>♠
-                <a href="#" onclick="show('spades');" class="black">&nbsp;&nbsp;Spades&nbsp;&nbsp;</a>♦
-                <a href="#" onclick="show('game');" class="red">&nbsp;&nbsp;Game&nbsp;&nbsp;</a>♣
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li onclick="show('home');"><a href="#" class="red">♥&nbsp;&nbsp;Home&nbsp;&nbsp;♥</a></li>
+                        <li onclick="show('about');"><a href="#" class="black">♠&nbsp;&nbsp;About Me&nbsp;&nbsp;♠</a></li>
+                        <li onclick="show('when');"><a href="#" class="red">♦&nbsp;&nbsp;When&nbsp;&nbsp;♦</a></li>
+                        <li onclick="show('where');"><a href="#" class="black">♣&nbsp;&nbsp;Where&nbsp;&nbsp;♣</a></li>
+                        <li onclick="show('why');"><a href="#" class="red">♥&nbsp;&nbsp;Why&nbsp;&nbsp;♥</a></li>
+                        <li class="red">♦&nbsp;&nbsp;How
+                            <ul class="sub-nav">
+                                <li onclick="show('blackjack');"><a href="#" class="black">Blackjack</a></li>
+                                <li onclick="show('poker');"><a href="#" class="red">Poker</a></li>
+                                <li onclick="show('cheat');"><a href="#" class="black">Cheat</a></li>
+                                <li onclick="show('slapjack');"><a href="#" class="red">SlapJack</a></li>
+                                <li onclick="show('spades');"><a href="#" class="black">Spades</a></li>
+                                <li onclick="show('game');"><a href="#" class="black">Live Games</a></li>
+                            </ul>&nbsp;♦ 
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </header>
 
-        <!-- Home Page -->
         <main>
+            <!-- Home Page -->
             <section id="home" class="target">
                 <h2>Home</h2>
                 <section class="cardSection">
@@ -178,7 +252,100 @@
                     <h3>What are the cards?</h3>
                     <p>So now that we know a little about card games, you may be wondering what are the actual cards? Feel free to follow along with the image below to better see how the cards actually look. Well there are 4 different suits each which have 13 cards. The easier to distinguish are the number cards ranging from 2-10. Beyond the number cards we have the face cards which are the Jack, Queen, King. The value of these cards change depending on the game that is being played. The last card is the Ace card which is marked by the letter A on the card. Now that we know the cards we can continue to the suites. Each of these cards exist in each of the suites. These suites are also further broken down into colors which is red and black. The diamond and heart suites are red while the clubs and spades are black. This detail can have significance in some games but not in all. </p>
                     <div class="center">
-                        <img src="images/deckofcards.png" alt="All 52 cards in the deck" width="400px">
+                        <img src="images/deckofcards.png" alt="All 52 cards in the deck" width="400">
+                    </div>
+                </section>
+            </section>
+            <!-- About Me Page -->
+            <section id="about" class="target">
+                <h2>About Me</h2>
+                <section class="cardSection">
+                    <h3>How Long Have I Played?</h3>
+                    <p>I have been playing varying card games since I was around 5 years old. Started with the good old Bak</p>
+                </section>
+                <section class="cardSection">
+                    <h3>What are some card games?</h3>
+                    <p>As mentioned earlier there are thousands of card games but I have provided some of the more popular ones below that will be our primary focus throughout this page:</p>
+                    <ul>
+                        <li>Blackjack</li>
+                        <li>Poker</li>
+                        <li>Cheat (aka BS)</li>
+                        <li>SlapJack</li>
+                        <li>Spades</li>
+                    </ul>
+                </section>
+                <section class="cardSection">
+                    <h3>What are the cards?</h3>
+                    <p>So now that we know a little about card games, you may be wondering what are the actual cards? Feel free to follow along with the image below to better see how the cards actually look. Well there are 4 different suits each which have 13 cards. The easier to distinguish are the number cards ranging from 2-10. Beyond the number cards we have the face cards which are the Jack, Queen, King. The value of these cards change depending on the game that is being played. The last card is the Ace card which is marked by the letter A on the card. Now that we know the cards we can continue to the suites. Each of these cards exist in each of the suites. These suites are also further broken down into colors which is red and black. The diamond and heart suites are red while the clubs and spades are black. This detail can have significance in some games but not in all. </p>
+                    <div class="center">
+                        <img src="images/deckofcards.png" alt="All 52 cards in the deck" width="400">
+                    </div>
+                </section>
+            </section>
+            <!-- When Page -->
+            <section id="when" class="target">
+                <h2>When Can You Play?</h2>
+                <section class="cardSection">
+                    <h3>Regular Card Games</h3>
+                    <p>Well here is the beauty of card games...THERE IS NO RIGHT TIME! Card games can be played anytime of the year except for the obvious snowy day outside. But in theory it is still entierly possible to do this. I would just recommend doing it in a warmer dry environment then on a snowy or rainy day outside.</p>
+                    <img class="center" src="images/people_playing_cards.jpeg" alt="Family playing cards Inside" width="500">
+                </section>
+                <section class="cardSection">
+                    <h3>Online Card Games</h3>
+                    <p>Just like with regular card games you can play this whenever! The only limitation is charge of your device and your willingness to lose hours of time inside these games.</p>
+                    <img class="center" src="images/online_card_game.png" alt="Card Game Online" width="500">
+                </section>
+                </section>
+            </section>
+            <!-- Where Page -->
+            <section id="where" class="target">
+                <h2>Where Can You Play Cards?</h2>
+                <section class="cardSection">
+                    <h3>Why Card Games?</h3>
+                    <p>Card Games have existed for over a millennium and are still popular today even if through different mediums. It is estimated that there are anywhere from 1,000 to 10,000 different card games based on what you define as a card game. This is crazy to think about since truthfully there are only 52 (no joker cards) total cards in a deck. Even knowing this there is actually 52! (8e67) ways of shuffling a single deck! Cards although may be simple paper with designs on them, have the ability to entertain almost anyone as there is surely a game made for everyone.</p>
+                </section>
+                <section class="cardSection">
+                    <h3>What are some card games?</h3>
+                    <p>As mentioned earlier there are thousands of card games but I have provided some of the more popular ones below that will be our primary focus throughout this page:</p>
+                    <ul>
+                        <li>Blackjack</li>
+                        <li>Poker</li>
+                        <li>Cheat (aka BS)</li>
+                        <li>SlapJack</li>
+                        <li>Spades</li>
+                    </ul>
+                </section>
+                <section class="cardSection">
+                    <h3>What are the cards?</h3>
+                    <p>So now that we know a little about card games, you may be wondering what are the actual cards? Feel free to follow along with the image below to better see how the cards actually look. Well there are 4 different suits each which have 13 cards. The easier to distinguish are the number cards ranging from 2-10. Beyond the number cards we have the face cards which are the Jack, Queen, King. The value of these cards change depending on the game that is being played. The last card is the Ace card which is marked by the letter A on the card. Now that we know the cards we can continue to the suites. Each of these cards exist in each of the suites. These suites are also further broken down into colors which is red and black. The diamond and heart suites are red while the clubs and spades are black. This detail can have significance in some games but not in all. </p>
+                    <div class="center">
+                        <img src="images/deckofcards.png" alt="All 52 cards in the deck" width="400">
+                    </div>
+                </section>
+            </section>
+            <!-- Why Page -->
+            <section id="why" class="target">
+                <h2>Why Do I Like Cards?</h2>
+                <section class="cardSection">
+                    <h3>Why Card Games?</h3>
+                    <p>Card Games have existed for over a millennium and are still popular today even if through different mediums. It is estimated that there are anywhere from 1,000 to 10,000 different card games based on what you define as a card game. This is crazy to think about since truthfully there are only 52 (no joker cards) total cards in a deck. Even knowing this there is actually 52! (8e67) ways of shuffling a single deck! Cards although may be simple paper with designs on them, have the ability to entertain almost anyone as there is surely a game made for everyone.</p>
+                </section>
+                <section class="cardSection">
+                    <h3>What are some card games?</h3>
+                    <p>As mentioned earlier there are thousands of card games but I have provided some of the more popular ones below that will be our primary focus throughout this page:</p>
+                    <ul>
+                        <li>Blackjack</li>
+                        <li>Poker</li>
+                        <li>Cheat (aka BS)</li>
+                        <li>SlapJack</li>
+                        <li>Spades</li>
+                    </ul>
+                </section>
+                <section class="cardSection">
+                    <h3>What are the cards?</h3>
+                    <p>So now that we know a little about card games, you may be wondering what are the actual cards? Feel free to follow along with the image below to better see how the cards actually look. Well there are 4 different suits each which have 13 cards. The easier to distinguish are the number cards ranging from 2-10. Beyond the number cards we have the face cards which are the Jack, Queen, King. The value of these cards change depending on the game that is being played. The last card is the Ace card which is marked by the letter A on the card. Now that we know the cards we can continue to the suites. Each of these cards exist in each of the suites. These suites are also further broken down into colors which is red and black. The diamond and heart suites are red while the clubs and spades are black. This detail can have significance in some games but not in all. </p>
+                    <div class="center">
+                        <img src="images/deckofcards.png" alt="All 52 cards in the deck" width="400">
                     </div>
                 </section>
             </section>
@@ -204,12 +371,12 @@
                     <h3>How do you calculate your hand value?</h3>
                     <p>In blackjack, to calculate you hand value you take the sum of both your cards. Number cards are what their number says while all face cards count for 10. The final card is a special one which is the ace. The ace card can count for either 11 or 1 depending if you are over 21 or not</p>
                     <div class="center">
-                        <img src="images/blackjack_value.jpeg" alt="Value of cards in Blackjack" width="400px">
+                        <img src="images/blackjack_value.jpeg" alt="Value of cards in Blackjack" width="400">
                     </div>
                 </section>
                 <section class="cardSection center">
                     <h3>Detailed Video</h3>
-                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PljDuynF-j0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PljDuynF-j0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </section>
             </section>
             <!-- Poker Page -->
@@ -224,7 +391,7 @@
                 <section class="cardSection">
                     <h3>What are the hand rankings?</h3>
                     <p>
-                        <img src="images/poker_rankings.jpeg" id="pokerRanking">
+                        <img src="images/poker_rankings.jpeg" alt="Rankings in poker with examples" id="pokerRanking">
                         The rankings are as follow:
                         <ul>
                             <li><strong>Royal Flush:</strong> This is the rarest hand and because of that it is the highest ranking hand. This is when you have 10, J, Q, K, A of the same suite.</li>
@@ -248,7 +415,7 @@
                 </section>
                 <section class="cardSection center">
                     <h3>Detailed Video</h3>
-                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JOomXP-r1wY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JOomXP-r1wY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </section>
             </section>
             <!-- Cheat Page -->
@@ -265,12 +432,12 @@
                     <h4>How to play?</h4>
                     <p>Play begins with the player to the left of the dealer. He places the Aces in his hand facedown on the discard pile and announces his play to the table: “One Ace.” If the player does not have any Aces, or if he wishes to get rid of more than one card, he may bluff and play non-Ace cards while announcing: “Two Aces.” The next player plays 2s, the next player plays 3s, and so on. If a player doesn not believe an announcement, he can call out, “Cheat!” The person who played the cards must turn them over and show the challenger whether he is bluffing or not. A player who is caught bluffing must pick up the entire discard pile and add it to his hand. If a challenged player is not bluffing, then the challenger must pick up the discard pile. When the rank to play reaches Kings, it then goes back to Aces and the numbers start again.</p>
                     <div class="center">
-                        <img src="images/cheat_example.jpeg" alt="Value of cards in Blackjack" width="400px">
+                        <img src="images/cheat_example.jpeg" alt="Value of cards in Blackjack" width="400">
                     </div>
                 </section>
                 <section class="cardSection center">
                     <h3>Detailed Video</h3>
-                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/AC-JWgeZbv4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/AC-JWgeZbv4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </section>
             </section>
             <!-- Slapjack Page -->
@@ -289,12 +456,12 @@
                     <p>The first player will be the one left of the dealer. One player at a time, each player will lift one card at a time from their pile and places it face up in the center of the table. If the card played is a Jack, all players will try to "slap" it. Whoever is the first to slap it will be able to take all the cards at the center and must put it at the bottom of their pile and shuffle it. If more than one hand slaps the pile then whosever hand is on top of the pile wins the Jack and pile. If a player slaps and it is not a Jack then the player who slapped gives their next card to the player who played the last card. If a player runs out of cards then they must wait until the next Jack to try and smack and claim the pile. However, if they fail to claim that Jack and pile, then the player is out of the game.
                     </p>
                     <div class="center">
-                        <img src="images/slapjack.jpeg" alt="Value of cards in Blackjack" width="400px">
+                        <img src="images/slapjack.jpeg" alt="Value of cards in Blackjack" width="400">
                     </div>
                 </section>
                 <section class="cardSection center">
                     <h3>Detailed Video</h3>
-                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PqXT9IvD-cU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PqXT9IvD-cU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </section>
             </section>
             <!-- Spades Page -->
@@ -321,7 +488,7 @@
                 </section>
                 <section class="cardSection center">
                     <h3>Detailed Video</h3>
-                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Z5BTSevuuqs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Z5BTSevuuqs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </section>
             </section>
             <!-- Game Page -->
@@ -330,15 +497,15 @@
                 <h3 class="center">Click on the images to be able to play these games!</h3>
                 <div class="gameLink center">
                     <h4>cardgames.io</h4>
-                    <a href="https://cardgames.io/" target="_blank"><img src="images/cardgames_picture.png" alt="Picture of CARDGAMES.IO" width="30%" class="gameImage"></a>
+                    <a href="https://cardgames.io/" target="_blank"><img src="images/cardgames_picture.png" alt="Picture of CARDGAMES.IO" width="350" class="gameImage"></a>
                 </div>
                 <div class="gameLink center">
                     <h4>arkadium.com</h4>
-                    <a href="https://www.arkadium.com/free-online-games/card/" target="_blank"><img src="images/arkadium_picture.png" alt="Picture of CARDGAMES.IO" width="30%" class="gameImage"></a>
+                    <a href="https://www.arkadium.com/free-online-games/card/" target="_blank"><img src="images/arkadium_picture.png" alt="Picture of CARDGAMES.IO" width="350" class="gameImage"></a>
                 </div>
                 <div class="gameLink center">
                     <h4>usatoday.com</h4>
-                    <a href="https://games.usatoday.com/category/card" target="_blank"><img src="images/usatoday_picture.png" alt="Picture of CARDGAMES.IO" width="30%" class="gameImage"></a>
+                    <a href="https://games.usatoday.com/category/card" target="_blank"><img src="images/usatoday_picture.png" alt="Picture of CARDGAMES.IO" width="350" class="gameImage"></a>
                 </div>
             </section>
         </main>

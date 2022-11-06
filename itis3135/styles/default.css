@@ -415,7 +415,7 @@ button{
     background-color: #878787;
     cursor: pointer;
     font-size: 2rem;
-    border: 1px, solid #000;
+    border: 1px solid #000;
 }
 .calcButton.operation{
     background-color: #ff8b3d;
