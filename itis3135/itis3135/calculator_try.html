@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://kit.fontawesome.com/1c8eefd787.js" crossorigin="anonymous"></script>
+    <title>Bryant De Luna-Peralta|Breathtaking Dalmadoodle|ITIS 3135|Calculator Try</title>
+</head>
+<body>
+    <header><div data-include="components/header.html"></div></header>
+
+    <main>
+        <h2>Calculator Attempt</h2>
+        <div class="calculator-try">
+            <div class="calculator-grid">
+                <div class="output">
+                    <div id="current-operand" class="current-operand">45</div>
+                </div>
+                <button class="calcButton other" data-action="clear" onclick = "executeProgram(true,0,1); return false;">AC</button>
+                <button class="calcButton other" data-action="negate" onclick = "executeProgram(true,0,2); return false;">+/-</button>
+                <button class="calcButton other" data-action="percent" onclick = "executeProgram(true,0,3); return false;">%</button>
+                <button class="calcButton operation" data-action="divide" onclick = "executeProgram(true,0,4); return false;">÷</button>
+                <button class="calcButton" value="1" onclick = "executeProgram(false,1,0); return false;">1</button>
+                <button class="calcButton" value="2" onclick = "executeProgram(false,2,0); return false;">2</button>
+                <button class="calcButton" value="3" onclick = "executeProgram(false,3,0); return false;">3</button>
+                <button class="calcButton operation" data-action="multiply" onclick = "executeProgram(true,0,5); return false;">&times;</button>
+                <button class="calcButton" value="4" onclick = "executeProgram(false,4,0); return false;">4</button>
+                <button class="calcButton" value="5" onclick = "executeProgram(false,5,0); return false;">5</button>
+                <button class="calcButton" value="6" onclick = "executeProgram(false,6,0); return false;">6</button>
+                <button class="calcButton operation" data-action="add" onclick = "executeProgram(true,0,6); return false;">+</button>
+                <button class="calcButton" value="7" onclick = "executeProgram(false,7,0); return false;">7</button>
+                <button class="calcButton" value="8" onclick = "executeProgram(false,8,0); return false;">8</button>
+                <button class="calcButton" value="9" onclick = "executeProgram(false,9,0); return false;">9</button>
+                <button class="calcButton operation" data-action="subtract" onclick = "executeProgram(true,0,7); return false;">-</button>
+                <button class="calcButton span-two" value="0" onclick = "storeValue(0); return false;">0</button>
+                <button class="calcButton" data-action="decimal" onclick = "storeValue(1); return false;">.</button>
+                <button class="calcButton operation" data-action="calculate" onclick = "storeValue(1); return false;">=</button>
+            </div>
+        </div>
+    </main>
+
+    <footer><div data-include="components/footer.html"></div></footer>
+    <script src="scripts/HTMLInclude.js"></script>
+    <script src="scripts/default.js"></script>
+    <script src="scripts/calculator_try.js"></script>
+</body>
+</html>

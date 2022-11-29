@@ -585,3 +585,31 @@ button{
     width: 1000px;
     object-fit: cover;
 }
+
+/* Peer Review */
+.webpageImage {
+    width: 600px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+.reviewSection {
+    width: 50%;
+    margin: 0 auto;
+}
+.reviewHeading {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-style: italic;
+    text-decoration: underline;
+}
+.reviewList {
+    margin-top: 0;
+    display: inline-block;
+    text-align: left;
+}
+.reviewList li {
+    padding: 5px 0;
+}
+.bold {
+    font-weight: bolder;
+}
