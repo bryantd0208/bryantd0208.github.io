@@ -527,3 +527,61 @@ button{
     text-shadow: 0 1px 2px rgba(0,0,0,0.6);
     border-radius: 10px;
 }
+
+/* Slideshow */
+#slideShow {
+    background-color: darkgrey;
+    padding: 50px;
+    width: 60%;
+    min-height: 50%;
+    margin: 0 auto;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+    border-radius: 10px;
+}
+.button_panel img{
+    width: 35%;
+}
+.button_panel img:hover{
+    cursor: pointer;
+}
+#left_arrow {
+    float: left;
+    width: 20%;
+}
+#right_arrow {
+    float: right;
+    width: 20%;
+}
+#left_button {
+}
+#right_button {
+}
+#slide {
+    max-width: 40%;
+}
+#slides img {
+    display: none;
+}
+#image_list {
+    padding-right: 1.25vw;
+}
+#image_list li{
+    list-style: none;
+    display: inline;
+}
+#image_list li img {
+    width: max(5%, 45px);
+    height: 45px;
+    padding: 5px 5px;
+    background-color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+    border-radius: 10px;
+}
+
+/* Activity 10 */
+#image {
+    border-radius: 10px;
+    height: 650px;
+    width: 1000px;
+    object-fit: cover;
+}

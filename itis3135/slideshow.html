@@ -9,31 +9,41 @@
     <script src="scripts/jquery-3.6.1.js"></script>
     <script src="scripts/slides.js"></script>
     <title>Bryant De Luna-Peralta|Breathtaking Dalmadoodle|ITIS 3135|Slideshow</title>
-    <style>
-        .alert {
-            color: red;
-        }
-    </style>
 </head>
+
 <body>
     <header><div data-include="components/header.html"></div></header>
 
     <main>
         <h2>Slideshow</h2>
-        <ul>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-        </ul>
+        <div id="slideShow">
+            <div id="left_arrow"><aside id="left_button" class="button_panel"><img src="images/leftArrow.png" alt="Left Arrow"></aside></div>
+            <div id="right_arrow"><aside id="right_button" class="button_panel"><img src="images/rightArrow.png" alt="Right Arrow"></aside></div>
+                <h3 id="caption">Best Premier League Teams</h3>
+                <a href="images/slideshow/premier_league.jpeg" class="imageLink"><img id="slide" src="images/slideshow/premier_league.jpeg" alt="All Premier League Teams"></a>
+                <div id="slides">
+                    <a href="images/slideshow/man_united.png"><img src="images/slideshow/man_united.png" alt="Rank 6: Manchester United"></a>
+                    <a href="images/slideshow/arsenal.png"><img src="images/slideshow/arsenal.png" alt="Rank 5: Arsenal"></a>
+                    <a href="images/slideshow/chelsea.png"><img src="images/slideshow/chelsea.png" alt="Rank: 4: Chelsea"></a>
+                    <a href="images/slideshow/tottenham.png"><img src="images/slideshow/tottenham.png" alt="Rank 3: Tottenham"></a>
+                    <a href="images/slideshow/liverpool.png"><img src="images/slideshow/liverpool.png" alt="Rank 2: Liverpool"></a>
+                    <a href="images/slideshow/man_city.png"><img src="images/slideshow/man_city.png" alt="Rank 1: Manchester City"></a>
+                </div>
+            <div id="thumbnailImages">
+                <ul id="image_list">
+                    <li><img src="" alt="Image 1"></li>
+                    <li><img src="" alt="Image 2"></li>
+                    <li><img src="" alt="Image 3"></li>
+                    <li><img src="" alt="Image 4"></li>
+                    <li><img src="" alt="Image 5"></li>
+                    <li><img src="" alt="Image 6"></li>
+                </ul>
+            </div>
+        </div>
     </main>
 
     <footer><div data-include="components/footer.html"></div></footer>
     <script src="scripts/HTMLInclude.js"></script>
-    <script src="scripts/default.js"></script>
+    <script src="scripts/defaultscripts.js"></script>
 </body>
 </html>
