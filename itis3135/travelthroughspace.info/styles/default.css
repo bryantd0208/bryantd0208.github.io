@@ -1,22 +1,31 @@
+/* * {
+  outline: 1px solid red !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+} */
 body {
     background: radial-gradient(circle at bottom, navy 0, black 100%);
     z-index: -1;
+    overflow-x: hidden;
   }
   .center {
     margin: 0 auto;
+    list-style-position: inside;
+    text-align: center;
   }
   .space {
     background: rgba(128, 0, 128, 0.1) center / 200px 200px round;
     bottom: 0;
     left: 0;
-    position: absolute;
+    position:fixed;
     right: 0;
     top: 0;
     z-index: -1;
-    
+    overflow: hidden;
   }
   .stars1 {
     animation: space 180s ease-in-out infinite;
+    overflow: hidden;
     z-index: -1;
     background-image:
       radial-gradient(
@@ -53,6 +62,7 @@ body {
   .stars2 {
     animation: space 240s ease-in-out infinite;
     z-index: -1;
+    overflow: hidden;
     background-image:
       radial-gradient(
         1px 1px at 75px 125px, 
@@ -88,6 +98,7 @@ body {
   }
   .stars3 {
     animation: space 300s ease-in-out infinite;
+    overflow: hidden;
     background-image:
       radial-gradient(
         1px 1px at 10px 10px, 
@@ -265,18 +276,16 @@ body {
     text-decoration: none;
   }
   nav ul li ul.sub-nav li:hover{
-    box-shadow: inset 3px 0 darkblue;
-    color: darkblue;
-    background-color: #515abc
+
   }
   nav ul li:hover ul.sub-nav{
     visibility: visible;
     opacity: 1;
     z-index: 5;
-  }
+  } 
   main {
     color: white;
-    margin-bottom: 10%;
+    margin: 15px2;
   }
   main h2 {
       text-align:center;
@@ -287,43 +296,63 @@ body {
       font-weight:bold;
       color: #fff;
   }
+  #home-main-content {
+    content: "";
+    display: table;
+    clear: both;
+    height: 80vmin;
+  }
+  .column {
+    float: left;
+  }
+  .left, .right {
+    width: 20%;
+  }
+  .middle {
+    width: 60%;
+    height: fit-content;
+  }
+  #captionArea {
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 80%;
+  }
+  #imgCaption {
+    font-size: 20px;
+    text-align: center;
+  }
   aside {
     font-style: italic;
     border: 4px double white;
     width: 80%;
-  }
-  #section, #feature {
-    padding: 0 2%;
+    height: min-content;
   }
   .mainImage{
-    width: 50%;
+    width:100%;
     border-radius: 10px;
   }
-  #section {
-    float:left;
-    width: 20%;
-  }
-  #feature {
-    float: right;
-    width: 20%;
-  }
   aside.sectionAside {
-    float: left;
+    height: min-content;
+    float: right;
   }
   aside.featureAside {
-    float: right;
+    height: min-content;
   }
   .sectionAside ul li, .featureAside ul li, .externalLinks ul li {
     padding: 5px;
     list-style: none;
   }
-  .imgCaption {
-    margin: 0 auto;
-    width: 50%;
+  #imgCaption {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: max(1.55vmin,12px);
   }
   aside.externalLinks {
-    margin-top: 100%;
-    float: right;
+    height: min-content;
+  }
+  footer {
+    width: 100%;
+    position: absolute;
   }
   footer h3{
     background-color: #348aa7;
@@ -342,7 +371,6 @@ body {
     color: #525174;
     transition: all 0.5s ease;
   }
-
   #contactSteps {
     width: 50%;
     margin: 0 auto;
@@ -350,11 +378,6 @@ body {
 }
 #contactSteps > p{
   font-size: 20px;
-}
-.center
-{
- text-align: center;
- list-style-position: inside;
 }
 ol.center li
 {
@@ -474,4 +497,95 @@ ol.center li
 .download-button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+/* About Us */
+#about-us {
+  width: 75%;
+  margin: 0 auto;
+}
+#about-us h3 {
+  font-size: 2.55rem;
+}
+#about-us p {
+  font-size: 1.25rem;
+}
+#team-member-image-list::after {
+  content: "";
+}
+#team-member-image-list::before {
+  content: "";
+}
+#team-member-image-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 1px solid silver;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-grow: inherit;
+}
+#team-member-image-list li{
+  margin: 1.25em;
+  text-align: center;
+  margin-bottom: 5em;
+}
+#team-member-image-list li img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 200px;
+  vertical-align: middle;
+}
+#team-member-image-list li a{
+  font-size: 1.55rem;
+  color: inherit;
+  text-decoration: inherit;
+}
+#team-member-image-list li p a:hover{
+  color: lightslategray;
+  cursor: pointer;
+  text-decoration: underline;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Work in progress */
+@media (max-width: 690px) {
+  html {overflow-x: hidden;}
+  .middle { width: 100%;}
+  main aside {
+    display: none;
+  }
+}
+@media (min-width: 691px) {
+  
+}
+@media (min-width: 962px) {
+
+}
+@media (min-width: 1196px) {
+
+}
+@media (min-width: 1455px) {
+
+}
+@media (min-width: 1700px) {
+
 }

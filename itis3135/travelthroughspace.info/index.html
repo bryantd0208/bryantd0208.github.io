@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Travel Through Space | Home</title>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <div data-include="components/head.html"></div>
-    <title>Travel Through Space | Home</title>
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" type="text/css" href="styles/jcarousel.css">
+    
+    <!-- Scripts-->
+    <script type="text/javascript" src="scripts/jquery-3.6.1.js"></script> -->
+    <script type="text/javascript" src="scripts/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="scripts/jcarousel.basic.js"></script>
+    <script type="text/javascript" src="scripts/jcarousel.news.js"></script>
+    
 </head>
+
 <body>
     <div class="space stars1"></div>
     <div class="space stars2"></div>
@@ -16,7 +28,7 @@
     <main>
         <h2>Welcome</h2>
         <div id="home-main-content">
-            <div id="section">
+            <div class="column left">
                 <aside class="sectionAside">
                     <ul>
                         <li>Section</li>
@@ -37,8 +49,22 @@
                     </ul>
                 </aside>
             </div>
-            <img class="mainImage" src="images/our-solar-system.jpeg" width="600" height="600">
-            <div id="feature">
+            <div class="column middle center">
+                    <div class="jcarousel-wrapper">
+                        <div class="jcarousel">
+                            <ul id="mainNews" class="mainNews"></ul>
+                        </div>
+        
+                        <a href="#" class="jcarousel-control-prev inactive">&lsaquo;</a>
+                        <a href="#" class="jcarousel-control-next active">&rsaquo;</a>
+                        
+                        <p class="jcarousel-pagination">
+                            
+                        </p>
+                    </div>
+                <div id="captionArea"><p id="imgCaption">Loading...</p></div>
+            </div>
+            <div class="column right">
                 <aside class="featureAside">
                     <ul>
                         <li>Feature</li>
@@ -62,10 +88,6 @@
                 </aside>
             </div>
         </div>
-        <p class="imgCaption">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptates maiores quam aperiam saepe dolore velit vero cum, beatae nostrum distinctio itaque exercitationem ducimus at eveniet. Cupiditate explicabo hic officia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, exercitationem voluptas! Reiciendis distinctio deleniti, similique sit temporibus cupiditate minima impedit voluptatem itaque asperiores quos praesentium dolores, quaerat magnam, nisi qui! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab reiciendis necessitatibus sed sapiente eligendi, aut voluptatem quis, nihil dignissimos, illum fugit sequi voluptatum molestias quasi dolores nisi ratione sit! Explicabo!
-
-        </p>
     </main>
     <footer><div data-include="components/footer.html"></div></footer>
     <script src="scripts/default_scripts.js"></script>

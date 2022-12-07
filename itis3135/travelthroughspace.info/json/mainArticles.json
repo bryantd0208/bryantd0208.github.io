@@ -1,0 +1,35 @@
+{"articleList":[
+    {
+		"headline": "NASA's Roman Mission Completes Key Optical Components",
+		"image": "https://www.nasa.gov/sites/default/files/thumbnails/image/22-28802_roman_ewa_testing-edit.jpg",
+		"link": "https://www.nasa.gov/image-feature/goddard/2022/nasas-roman-mission-completes-key-optical-components",
+		"text": "Engineers at Ball Aerospace, one of the industrial partners for NASA's Nancy Grace Roman Space Telescope, have installed and aligned the element wheel assembly (pictured above) into the telescope's Wide Field Instrument. The assembly contains eight science filters, two dispersive elements (a grism and prism) and a “blank” element (used for internal calibration) that will help scientists solve some of the most profound mysteries in astrophysics when Roman launches by May 2027.",
+        "month": "December",
+        "day": "5"
+	},
+	{
+		"headline": "Artemis I Day 19: Orion Prepares for Close Lunar Flyby",
+		"image": "https://blogs.nasa.gov/artemis/wp-content/uploads/sites/303/2022/12/Artemis-I-FD-19-The-Moon-is-Getting-Bigger-1536x1152.jpg",
+		"link": "https://blogs.nasa.gov/artemis/",
+        "alt": "Close Up of Artemis Spacecraft",
+		"text": "NASA will provide live coverage of the Artemis I uncrewed Orion spacecraft's return flyby of the Moon on Monday, Dec. 5, as well as its return to Earth on Sunday, Dec. 11. The agency also will host several briefings to discuss the upcoming activities from Johnson Space Center in Houston. NASA will provide live coverage on NASA Television, the agency's website, and the NASA app. Orion has begun its return trek toward Earth, completing a burn Dec. 1, to exit a lunar orbit thousands of miles beyond the Moon, where engineers have been testing systems to improve understanding of the spacecraft before future missions with astronauts.",
+        "month": "December",
+        "day": "4"
+	},
+	{
+		"headline": "Spacewalkers Complete New Solar Array Installation on Station",
+		"image": "https://blogs.nasa.gov/spacestation/wp-content/uploads/sites/240/2022/12/blog_useva_82_120322b.jpg",
+		"link": "https://blogs.nasa.gov/spacestation/2022/12/03/spacewalkers-complete-new-solar-array-installation-on-station/",
+		"text": "Cassada and Rubio completed their major objectives for today to install an International Space Station Roll-Out Solar Array (iROSA) and disconnect a cable to ensure the 1B channel can be reactivated. They also completed an additional task to release several bolts for the upcoming iROSA installation on the 4A power channel on the port truss.",
+        "month": "December",
+        "day": "3"
+	},
+    {
+		"headline": "NASA Delivers First Flight Hardware to ESA for Lunar Pathfinder",
+		"image": "https://www.nasa.gov/sites/default/files/thumbnails/image/lunar_pathfinder.jpg",
+		"link": "https://www.nasa.gov/image-feature/goddard/2022/nasa-delivers-first-flight-hardware-to-esa-for-lunar-pathfinder",
+		"text": "NASA delivered the first flight hardware for the Lunar Pathfinder mission to ESA (European Space Agency), which formally accepted the instrument on Nov. 4. NASA's Goddard Space Flight Center in Greenbelt, Maryland, developed the instrument, a laser retroreflector array, which will test new navigation techniques for lunar missions.",
+        "month": "December",
+        "day": "2"
+	}
+]}

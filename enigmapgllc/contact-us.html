@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div data-include="components/head.html"></div>
+    <title>Enigma PG LLC</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link
+  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+</head>
+<body>
+    <header><div data-include="components/header.html"></div></header>
+
+        <main>
+            <h1>Contact Us</h1>
+            <section id="contactSteps">
+                <img id="contactImage" src="images/gallery/61.jpeg">
+                <p>We treat each project as if we were completing it in our own home, so you can be sure that you will be satisfied with the quality of our work.</p>
+                <p>Here's how we do it:
+                </p>
+                <div class="listCenter">
+                    <ol>
+                        <li>Fill out the contact form.</li>
+                        <li>We will contact you to discuss further details and how we can help you with your project.</li>
+                    </ol>
+                </div>
+                <p>Consultations are free but the transformations are priceless!</p>
+            </section>
+            <article id="mainForm">
+                <form action="https://httpbin.org/get" method="get">
+                    <fieldset class="mainField">
+                        <div class="headOfDocument">
+                            <img src="images/logo/EnigmaLogo.png" alt="Enigma PG LLC Logo">
+                            <h1>Contact Us</h1>
+                            <h4>Let us know how we can help you. </h4>
+                        </div>
+                        <p>
+                            <label for="firstName">First Name:</label>
+                            <input type="text" name="firstName" id="firstName" placeholder="Ex: Jane" autocomplete="on" required>
+                        </p>
+                        <p>
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Ex: Foster" autocomplete="on" required>
+                        </p>
+                        <p>
+                            <label for="companyName">Company Name:</label>
+                            <input type="text" name="companyName" id="companyName" placeholder="Ex: Enigma PG LLC(optional)">
+                        </p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input type="email" name="emailAddress" id="email" placeholder="Ex: jfoster@gmail.com" autocomplete="on" required>
+                        </p>
+                        <p>
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" name="phone" id="phone" placeholder="Ex: 1111111111" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                        </p>
+                        <p>
+                            <label for="message">Details:</label>
+                            <br>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+                        </p>
+                        <br>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </fieldset>
+                </form>
+            </article>
+        </main>
+
+        <footer><div data-include="components/footer.html"></div></footer>
+
+        <script src="scripts/HTMLInclude.js"></script>
+        <script src="scripts/default.js"></script>
+</body>
+</html>
